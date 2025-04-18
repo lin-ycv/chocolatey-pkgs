@@ -1,0 +1,27 @@
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>everythingcmdpal</id>
+    <version>0.1.0.0</version>
+    <owners>linycv</owners>
+    <title>Everything Command Palette</title>
+    <authors>Lin Yu-Chieh (Victor)</authors>
+    <projectUrl>https://github.com/lin-ycv/EverythingCommandPalette</projectUrl>
+    <iconUrl>https://cdn.githubraw.com/lin-ycv/EverythingCommandPalette/refs/heads/main/EverythingCmdPal/Assets/Square150x150Logo.scale-200.png</iconUrl>
+    <licenseUrl>https://github.com/lin-ycv/EverythingCommandPalette/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <tags>everythingcommandpalette everythingcmdpal everythingcp everything powertoys search ecp everything-extension extension cmdpal command-palette commandpalette</tags>
+    <summary>Everything integration for Command Palette</summary>
+    <description>Everything integration for Command Palette</description>
+    <bugTrackerUrl>https://github.com/lin-ycv/EverythingCommandPalette/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/lin-ycv/chocolatey-pkgs/tree/everythingcmdpal</packageSourceUrl>
+    <projectSourceUrl>https://github.com/lin-ycv/EverythingCommandPalette</projectSourceUrl>
+    <releaseNotes>https://github.com/lin-ycv/EverythingCommandPalette/releases/tag/v0.1.0</releaseNotes>
+    <dependencies>
+      <dependency id="windows-app-runtime16" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
