@@ -7,7 +7,7 @@
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>linycv</owners>
     <!-- == SOFTWARE SPECIFIC SECTION == -->
-    <title>Windows App Runtime 1.6</title>
+    <title>Windows App Runtime</title>
     <authors>Microsoft Corporation</authors>
     <projectUrl>https://github.com/microsoft/WindowsAppSDK</projectUrl>
     <licenseUrl>https://github.com/microsoft/WindowsAppSDK/blob/main/LICENSE</licenseUrl>
