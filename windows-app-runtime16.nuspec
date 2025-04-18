@@ -1,0 +1,26 @@
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>windows-app-runtime16</id>
+    <version>1.6.7</version>
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <owners>linycv</owners>
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>Windows App Runtime 1.6</title>
+    <authors>Microsoft Corporation</authors>
+    <projectUrl>https://github.com/microsoft/WindowsAppSDK</projectUrl>
+    <licenseUrl>https://github.com/microsoft/WindowsAppSDK/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <tags>windowsappruntime windowsappsdk microsoft</tags>
+    <summary>Everything integration for Command Palette</summary>
+    <description>Windows App Runtime is a set of runtime components that enables apps built with the Windows App SDK to run consistently across different versions of Windows. It provides the necessary infrastructure and services required at runtime by these modern Windows apps.</description>
+    <bugTrackerUrl>https://github.com/microsoft/WindowsAppSDK/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/lin-ycv/chocolatey-pkgs/tree/windows-app-runtime16</packageSourceUrl>
+    <projectSourceUrl>https://github.com/microsoft/WindowsAppSDK</projectSourceUrl>
+    <releaseNotes>https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes-archive/stable-channel-1.6#version-167-16250402001</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
