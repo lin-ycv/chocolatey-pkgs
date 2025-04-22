@@ -1,6 +1,6 @@
-﻿$ErrorActionPreference = 'Stop' # stop on all errors
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$ErrorActionPreference = 'Stop' # stop on all errors
 
+$filename = "windowsappruntimeinstall.exe"
 switch($env:PROCESSOR_ARCHITECTURE){
         "ARM64" {
             $url = "https://aka.ms/windowsappsdk/1.6/1.6.250228001/windowsappruntimeinstall-arm64.exe"
@@ -16,15 +16,15 @@ switch($env:PROCESSOR_ARCHITECTURE){
         }
     }
 
+#Install-ChocolateyPackage puts silent arg outside of filepath ("install.exe" "--quiet"), but it needs to be inside ("install.exe --quiet"), so download and execute separately
 
-$packageArgs = @{
+$args = @{
   packageName   = $env:ChocolateyPackageName
-  fileType      = 'exe'
-  silentArgs    = "--quiet"
+  fileFullPath  = "$env:TEMP\$filename"
   url         = $url
-  validExitCodes= @(0)
   checksum    = $expectedHash
   checksumType= 'sha256'
 }
+Get-ChocolateyWebFile @args
 
-Install-ChocolateyPackage @packageArgs
+& $env:TEMP\$filename --quiet --force
