@@ -1,0 +1,29 @@
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>everything-alpha</id>
+    <version>1.5.0.1391</version>
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <owners>linycv</owners>
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>Everything Alpha</title>
+    <authors>David Carpenter</authors>
+    <licenseUrl>https://www.voidtools.com/License.txt</licenseUrl>
+    <projectUrl>https://www.voidtools.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/chocolatey-community/chocolatey-packages@cf277846cf6b5436461ebd5f21b00efd67ee9910/icons/everything.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <tags>everything file-system indexing freeware file search ntfs admin voidtools alpha</tags>
+    <description>"Everything" is an administrative tool that locates files and folders by filename instantly for Windows.
+Unlike Windows search "Everything" initially displays every file and folder on your computer (hence the name "Everything").
+You type in a search filter to limit what files and folders are displayed.</description>
+    <summary>Everything Search Engine - locate files and folders by name instantly</summary>
+    <docsUrl>https://www.voidtools.com/faq/</docsUrl>
+    <mailingListUrl>https://www.voidtools.com/forum/</mailingListUrl>
+    <bugTrackerUrl>https://www.voidtools.com/forum/viewforum.php?f=6</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/lin-ycv/chocolatey-pkgs/tree/everything-alpha</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
