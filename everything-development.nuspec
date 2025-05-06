@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
-    <id>everything-alpha</id>
+    <id>everything-development</id>
     <version>1.5.0.1391</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>linycv</owners>
@@ -15,8 +15,9 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <tags>everything file-system indexing freeware file search ntfs admin voidtools alpha</tags>
     <description>"Everything" is an administrative tool that locates files and folders by filename instantly for Windows.
-Unlike Windows search "Everything" initially displays every file and folder on your computer (hence the name "Everything").
-You type in a search filter to limit what files and folders are displayed.</description>
+This is the alpha version of Everything, which more feature rich than the stable version; despite it being called alpha, it is just as stable as the stable releases.
+Chocolatey does not allow Alpha/Beta in the id, so this package uses development instead of alpha.
+</description>
     <summary>Everything Search Engine - locate files and folders by name instantly</summary>
     <docsUrl>https://www.voidtools.com/faq/</docsUrl>
     <mailingListUrl>https://www.voidtools.com/forum/</mailingListUrl>
