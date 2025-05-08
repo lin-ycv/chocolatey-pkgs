@@ -1,0 +1,31 @@
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>everything-development</id>
+    <version>1.5.0.1391</version>
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <owners>linycv</owners>
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>Everything Alpha</title>
+    <authors>David Carpenter</authors>
+    <licenseUrl>https://www.voidtools.com/License.txt</licenseUrl>
+    <projectUrl>https://www.voidtools.com/</projectUrl>
+    <iconUrl>https://github.com/lin-ycv/chocolatey-pkgs/main/icons/Everything.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <tags>everything file-system indexing freeware file search ntfs admin voidtools alpha</tags>
+    <description>"Everything Alpha" is the alpha release of an administrative tool that locates files and folders by filename instantly for Windows.
+Unlike Windows search "Everything" initially displays every file and folder on your computer (hence the name "Everything").
+You type in a search filter to limit what files and folders are displayed.  
+Despite being Alpha, this release is generally stable and much more feature rich than the [standard release](https://chocolatey.org/packages/everything)
+</description>
+    <summary>Everything Search Engine - locate files and folders by name instantly</summary>
+    <docsUrl>https://www.voidtools.com/faq/</docsUrl>
+    <mailingListUrl>https://www.voidtools.com/forum/</mailingListUrl>
+    <bugTrackerUrl>https://www.voidtools.com/forum/viewforum.php?f=6</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/lin-ycv/chocolatey-pkgs/main/External/everything-development</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
