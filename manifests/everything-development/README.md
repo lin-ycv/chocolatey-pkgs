@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/lin-ycv/chocolatey-pkgs@15c1cf0ed365761607f560b13da908c3e0f1f7e7/icons/Everything.png" width="48" height="48"/> [Everything Alpha](https://chocolatey.org/packages/everything-development)
+# <img src="https://cdn.jsdelivr.net/gh/lin-ycv/chocolatey-pkgs@main/manifests/everything-development/img/Everything.png" width="48" height="48"/> [Everything Alpha](https://chocolatey.org/packages/everything-development)
 
 "Everything Alpha" is the alpha release of an administrative tool that locates files and folders by filename instantly for Windows.
 Unlike Windows search "Everything" initially displays every file and folder on your computer (hence the name "Everything").
@@ -39,4 +39,4 @@ Example: `choco install everything-development --install-arguments="-install-opt
 
 ## Screenshot
 
-![screenshot](https://cdn.jsdelivr.net/gh/lin-ycv/chocolatey-pkgs@15c1cf0ed365761607f560b13da908c3e0f1f7e7/External/everything-development/Screenshot.png)
+![screenshot](https://cdn.jsdelivr.net/gh/lin-ycv/chocolatey-pkgs@main/manifests/everything-development/img/Screenshot.png)
