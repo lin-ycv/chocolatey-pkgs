@@ -17,7 +17,6 @@ function global:au_GetLatest {
         Version = $version
         URL32 = ($pre+"86"+$exe)
         URL64 = ($pre+"64"+$exe)
-        PackageName  = 'Everything Alpha'
     }
 }
 
