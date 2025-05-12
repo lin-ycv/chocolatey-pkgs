@@ -59,7 +59,7 @@ Example: `choco install everything-development --install-arguments="-install-opt
     <docsUrl>https://www.voidtools.com/faq/</docsUrl>
     <mailingListUrl>https://www.voidtools.com/forum/</mailingListUrl>
     <bugTrackerUrl>https://www.voidtools.com/forum/viewforum.php?f=6</bugTrackerUrl>
-    <packageSourceUrl>https://github.com/lin-ycv/chocolatey-pkgs/tree/main/External/everything-development</packageSourceUrl>
+    <packageSourceUrl>https://github.com/lin-ycv/chocolatey-pkgs/tree/main/manifests/everything-development</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

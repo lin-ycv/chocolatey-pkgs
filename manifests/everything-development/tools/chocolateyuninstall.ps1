@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageName         = 'Everything Development'
+$packageName         = 'Everything Alpha'
 $softwareNamePattern = 'Everything *'
 
 

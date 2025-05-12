@@ -1,0 +1,21 @@
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>everythingpowertoys</id>
+    <version>_VERSION_</version>
+    <title>EverythingPowerToys</title>
+    <authors>Lin Yu-Chieh (Victor)</authors>
+    <owners>linycv</owners>
+    <projectUrl>https://github.com/lin-ycv/EverythingPowerToys</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/lin-ycv/EverythingPowerToys/main/Images/Everything.light.png</iconUrl>
+    <licenseUrl>https://github.com/lin-ycv/EverythingPowerToys/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Everything integration for PowerToys Run</description>
+    <summary>Everything integration for PowerToys Run</summary>
+    <tags>everythingpowertoys everything powertoys search ept powertoys-run-plugin powertoys-run</tags>
+    <bugTrackerUrl>https://github.com/lin-ycv/EverythingPowerToys/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/lin-ycv/chocolatey-pkgs/tree/everythingpowertoys</packageSourceUrl>
+    <projectSourceUrl>https://github.com/lin-ycv/EverythingPowerToys</projectSourceUrl>
+    <releaseNotes>https://github.com/lin-ycv/EverythingPowerToys/releases/tag/v_VERSION_</releaseNotes>
+  </metadata>
+</package>
