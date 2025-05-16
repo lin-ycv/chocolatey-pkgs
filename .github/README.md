@@ -6,8 +6,8 @@ For chocolatey packages maintained by me.
 
 To clone just one package manifest instead of everything
 
-1. `git clone --filter=blob:none --no-checkout --depth 1 https://github.com/lin-ycv/chocolatey-pkgs.git`
-2. `cd chocolatey-pkgs`
-3. `git sparse-checkout set --cone`
-4. `git sparse-checkout set <PATH/TO/FOLDER/>`
-5. `git checkout main`
+`git clone --filter=blob:none --no-checkout --depth 1 https://github.com/lin-ycv/chocolatey-pkgs.git`
+`cd chocolatey-pkgs`
+`git sparse-checkout set --cone`
+`git sparse-checkout set <PATH/TO/FOLDER/>`
+`git checkout main`
