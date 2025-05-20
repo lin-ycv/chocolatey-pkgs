@@ -14,11 +14,15 @@ jobs:
     name: update_${{ matrix.package }}
     runs-on: windows-latest
 
+    permissions:
+      contents: write
+
     strategy:
       max-parallel: 1
       matrix:
         package: [
-          everything-development
+          everything-development,
+          windows-app-runtime16
         ]
 
     steps:
@@ -36,7 +40,7 @@ jobs:
           $UpdateOutput = .\update.ps1
           $NupkgPath = (($UpdateOutput.Result | Where-Object {$_ -like '*.nupkg''*'}) -split "'")[1]
           Write-Output "NupkgPath=$($NupkgPath)" >> $Env:GITHUB_OUTPUT
-          $UpdateStatus = if (-not $NupkgPath) {'No Update'} else {'Update Available'}
+          $UpdateStatus = if ($UpdateOutput.Result -match 'No new version found') {'No Update'} else {'Update Available'}
           Write-Output "UpdateStatus=$($UpdateStatus)" >> $Env:GITHUB_OUTPUT
 
       - name: Test ${{ matrix.package }} install
@@ -51,10 +55,9 @@ jobs:
           choco push $Nupkg --source $ChocoServer --key $ApiKey
         if: steps.update.outputs.UpdateStatus == 'Update Available'
 
-      # Keep repo files as template
-      # - name: Commit Updated nuspec
-      #   uses: stefanzweifel/git-auto-commit-action@v4
-      #   with:
-      #     commit_message: Apply Choco package update - ${{ matrix.package }} ${{ steps.update.outputs.newversion }}
-      #     file_pattern: '*.nuspec *.ps1'
-      #   if: steps.update.outputs.UpdateStatus == 'Update Available'
+      - name: Commit Updates
+        uses: stefanzweifel/git-auto-commit-action@v5.2.0
+        with:
+          commit_message: Updated - ${{ matrix.package }} ${{ steps.update.outputs.newversion }} $(Get-Date -Format yyyy-MM-dd)
+          file_pattern: '*.nuspec *.ps1'
+        if: steps.update.outputs.UpdateStatus == 'Update Available'

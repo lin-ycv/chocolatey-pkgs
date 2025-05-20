@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>everythingpowertoys</id>
-    <version>_VERSION_</version>
+    <version>0.00.0</version>
     <title>EverythingPowerToys</title>
     <authors>Lin Yu-Chieh (Victor)</authors>
     <owners>linycv</owners>
@@ -14,8 +14,7 @@
     <summary>Everything integration for PowerToys Run</summary>
     <tags>everythingpowertoys everything powertoys search ept powertoys-run-plugin powertoys-run</tags>
     <bugTrackerUrl>https://github.com/lin-ycv/EverythingPowerToys/issues</bugTrackerUrl>
-    <packageSourceUrl>https://github.com/lin-ycv/chocolatey-pkgs/tree/everythingpowertoys</packageSourceUrl>
+    <packageSourceUrl>https://github.com/lin-ycv/chocolatey-pkgs/tree/main/manifests/everythingpowertoys</packageSourceUrl>
     <projectSourceUrl>https://github.com/lin-ycv/EverythingPowerToys</projectSourceUrl>
-    <releaseNotes>https://github.com/lin-ycv/EverythingPowerToys/releases/tag/v_VERSION_</releaseNotes>
   </metadata>
 </package>

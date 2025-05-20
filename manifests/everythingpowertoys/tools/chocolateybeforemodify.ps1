@@ -1,1 +1,2 @@
-﻿stop-process -Name "PowerToys"
+﻿$ErrorActionPreference = 'Stop'
+stop-process -Name "PowerToys" -ErrorAction SilentlyContinue > $null

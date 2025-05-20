@@ -1,7 +1,7 @@
-﻿$ErrorActionPreference = 'Stop'; # stop on all errors
-$zip = "Everything-_VERSION_-x64.zip"
+﻿$ErrorActionPreference = 'Stop';
+$zip = 'EverythingPT-0.89.0-x64.zip'
 if($env:PROCESSOR_ARCHITECTURE -eq "ARM64"){
-  $zip = "Everything-_VERSION_-ARM64.zip"
+  $zip = 'EverythingPT-0.89.0-ARM64.zip'
 }
 
 $packageArgs = @{
