@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>everythingpowertoys</id>
-    <version>0.00.0</version>
+    <version>0.91.1</version>
     <title>EverythingPowerToys</title>
     <authors>Lin Yu-Chieh (Victor)</authors>
     <owners>linycv</owners>

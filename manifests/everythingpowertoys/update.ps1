@@ -14,6 +14,19 @@ function global:au_GetLatest {
         return
     }
     $x64hash = $matches[1]
+    $x64exehashpattern = "\s?x64-EXE\s?\|\s?([a-zA-Z0-9]{64})"
+    if (-not ($obj.body -match $x64hashpattern)) {
+        Write-Output "No hash for x64 found."
+        return
+    }
+    $x64ehash = $matches[1]
+    $arm64exehashpattern = "\s?ARM64-EXE\s?\|\s?([a-zA-Z0-9]{64})"
+    if (-not ($obj.body -match $x64hashpattern)) {
+        Write-Output "No hash for x64 found."
+        return
+    }
+    $arm64ehash = $matches[1]
+
     $version = $obj.tag_name.trim('v')
 
     #returns into $Lastest
@@ -21,8 +34,12 @@ function global:au_GetLatest {
         Version = $version
         ARM64 = $obj.assets.browser_download_url | Where-Object { $_ -match "$version.*ARM64.zip" }
         URL64 = $obj.assets.browser_download_url | Where-Object { $_ -match "$version.*x64.zip" }
-	    Checksum64 = $x64hash
-	    Checksuma64 = $armhash
+        URL64e = $obj.assets.browser_download_url | Where-Object { $_ -match "$version.*x64.exe" }
+        URLa64e = $obj.assets.browser_download_url | Where-Object { $_ -match "$version.*ARM64.exe" }
+	Checksum64 = $x64hash
+	Checksuma64 = $armhash
+	Checksum64e = $x64ehash
+	Checksuma64e = $arm64ehash
     }
 }
 
