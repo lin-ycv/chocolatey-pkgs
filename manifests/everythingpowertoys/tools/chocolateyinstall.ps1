@@ -1,12 +1,12 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 stop-process -Name "PowerToys" -ErrorAction SilentlyContinue > $null
 
-$url        = 'https://github.com/lin-ycv/EverythingPowerToys/releases/download/v0.89.0/EverythingPT-0.89.0-x64.zip'
-$hash       = '4eb7e839e8ef4c3eb81dcc48d927cb1f9c761b2c25eb1b41a453c08879012353'
+$url        = 'https://github.com/lin-ycv/EverythingPowerToys/releases/download/v0.91.1/EverythingPT-0.91.1-x64.zip'
+$hash       = '1ab45af0a4e8c39dd355a7264629911ab14ab12f3231a49849a69c0570de8790'
 
 if($env:PROCESSOR_ARCHITECTURE -eq "ARM64"){
-        $url = 'https://github.com/lin-ycv/EverythingPowerToys/releases/download/v0.89.0/EverythingPT-0.89.0-ARM64.zip'
-        $hash = '4d71bfe94942942911d2dd6ffce9d42e5a977e6289c0b199ba2e0282a9f7f4ba'
+        $url = 'https://github.com/lin-ycv/EverythingPowerToys/releases/download/v0.91.1/EverythingPT-0.91.1-ARM64.zip'
+        $hash = '67762f69d55af8efb13c36e21a3bf484d2efa49285a28e05975d64cddc508c98'
 }
 
 $packageArgs = @{
