@@ -36,10 +36,10 @@ function global:au_GetLatest {
         URL64 = $obj.assets.browser_download_url | Where-Object { $_ -match "$version.*x64.zip" }
         URL64e = $obj.assets.browser_download_url | Where-Object { $_ -match "$version.*x64.exe" }
         URLa64e = $obj.assets.browser_download_url | Where-Object { $_ -match "$version.*ARM64.exe" }
-	Checksum64 = $x64hash
-	Checksuma64 = $armhash
-	Checksum64e = $x64ehash
-	Checksuma64e = $arm64ehash
+        Checksum64 = $x64hash
+        Checksuma64 = $armhash
+        Checksum64e = $x64ehash
+        Checksuma64e = $arm64ehash
     }
 }
 
