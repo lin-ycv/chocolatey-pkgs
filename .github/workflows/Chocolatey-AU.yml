@@ -48,11 +48,16 @@ jobs:
         if: steps.update.outputs.UpdateStatus == 'Update Available'
 
       - name: Publish to Chocolatey community feed
+        id: push
         run: |
           $Nupkg = '${{ steps.update.outputs.NupkgPath }}'
           $ApiKey = '${{ secrets.CHOCO_KEY }}'
           $ChocoServer = 'https://push.chocolatey.org/'
-          choco push $Nupkg --source $ChocoServer --key $ApiKey
+          $pr = choco push $Nupkg --source $ChocoServer --key $ApiKey
+          $PushStatus = if ($pr -match '403') {'Failed'} else {'Pushed'}
+          Write-Output "PushStatus=$($PushStatus)" >> $Env:GITHUB_OUTPUT
+          echo $pr
+          exit 0
         if: steps.update.outputs.UpdateStatus == 'Update Available'
 
       - name: Commit Updates
@@ -60,4 +65,4 @@ jobs:
         with:
           commit_message: Updated - ${{ matrix.package }} ${{ steps.update.outputs.newversion }} $(Get-Date -Format yyyy-MM-dd)
           file_pattern: '*.nuspec *.ps1'
-        if: steps.update.outputs.UpdateStatus == 'Update Available'
+        if: steps.update.outputs.UpdateStatus == 'Update Available' && steps.push.outputs.PushStatus == 'Pushed'

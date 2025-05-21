@@ -2,7 +2,7 @@ Import-Module Chocolatey-AU
 
 function global:au_GetLatest {
     $url = "https://github.com/MicrosoftDocs/windows-dev-docs/raw/refs/heads/docs/hub/apps/windows-app-sdk/downloads-archive.md"
-    $html = Invoke-RestMethod -Uri ($url+"everything-1.5a/") -UseBasicParsing
+    $html = Invoke-RestMethod -Uri $url -UseBasicParsing
     $vPattern = "\|\s?\[(1.6.\d+)\s?\("
     if (-not ($html -match $vPattern)) {
         Write-Output "No version found."
