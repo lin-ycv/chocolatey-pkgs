@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>everything-development</id>
-    <version>1.5.0.1391</version>
+    <version>1.5.0.1396</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>linycv</owners>
     <!-- == SOFTWARE SPECIFIC SECTION == -->
