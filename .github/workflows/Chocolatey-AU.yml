@@ -2,7 +2,7 @@ name: Choco Auto Update
 
 on:
   schedule:
-    - cron:  '6 9 * * 3'
+    - cron:  '27 9 * * 3'
   workflow_dispatch:
 
 defaults:
@@ -22,7 +22,8 @@ jobs:
       matrix:
         package: [
           everything-development,
-          windows-app-runtime16
+          windows-app-runtime16,
+          windows-app-runtime17
         ]
 
     steps:
@@ -40,7 +41,8 @@ jobs:
           $UpdateOutput = .\update.ps1
           $NupkgPath = (($UpdateOutput.Result | Where-Object {$_ -like '*.nupkg''*'}) -split "'")[1]
           Write-Output "NupkgPath=$($NupkgPath)" >> $Env:GITHUB_OUTPUT
-          $UpdateStatus = if ($UpdateOutput.Result -match 'No new version found') {'No Update'} else {'Update Available'}
+          $ChocoVer = choco search ${{ matrix.package }} --exact | Where-Object { $_ -match '^${{ matrix.package }}\s' } | ForEach-Object { ($_ -split '\s+')[1] }
+          $UpdateStatus = if ($UpdateOutput.updated -or ([version]$ChocoVer -lt [version]$UpdateOutput.NuspecVersion)) {'Update Available'} else {'No Update'}
           Write-Output "UpdateStatus=$($UpdateStatus)" >> $Env:GITHUB_OUTPUT
 
       - name: Test ${{ matrix.package }} install
