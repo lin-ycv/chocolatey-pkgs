@@ -18,7 +18,7 @@
     <projectSourceUrl>https://github.com/lin-ycv/EverythingCommandPalette</projectSourceUrl>
     <releaseNotes>https://github.com/lin-ycv/EverythingCommandPalette/releases/tag/v0.1.0</releaseNotes>
     <dependencies>
-      <dependency id="windows-app-runtime16" />
+      <dependency id="windows-app-runtime17" />
     </dependencies>
   </metadata>
   <files>
