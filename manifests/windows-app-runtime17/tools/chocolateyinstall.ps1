@@ -6,11 +6,11 @@ $filename = "windowsappruntimeinstall17.exe"
 $args = @{
     packageName = $env:ChocolateyPackageName
     fileFullPath = "$env:TEMP\$filename"
-    url = 'https://aka.ms/windowsappsdk/1.7/1.7.250909003/windowsappruntimeinstall-x86.exe'
-    checksum = '23371a8003794642ec300032d1f8194f120a457f4ec74cd182e17460571ce868'
+    url = 'https://aka.ms/windowsappsdk/1.7/1.7.251014001/windowsappruntimeinstall-x86.exe'
+    checksum = '479b4a7499c000500017c8c20bbde5e21f7759b6d3f2660107d40ca4db938e47'
     checksumType = 'sha256'
-    url64Bit = 'https://aka.ms/windowsappsdk/1.7/1.7.250909003/windowsappruntimeinstall-x64.exe'
-    checksum64 = 'a3780c756357cd519b481080de88bdacd661b5a2d5c1c828d25b90913abbd1b9'
+    url64Bit = 'https://aka.ms/windowsappsdk/1.7/1.7.251014001/windowsappruntimeinstall-x64.exe'
+    checksum64 = 'b1904c8ce2cfb7c8bc28cb094f8fe47c06ccf47eb6d46abc8e1ef17d3cbf91a6'
     checksumType64= 'sha256'
   }
   Get-ChocolateyWebFile @args
