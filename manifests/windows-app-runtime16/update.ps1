@@ -3,13 +3,13 @@ Import-Module Chocolatey-AU
 function global:au_GetLatest {
     $url = "https://github.com/MicrosoftDocs/windows-dev-docs/raw/refs/heads/docs/hub/apps/windows-app-sdk/downloads-archive.md"
     $html = Invoke-RestMethod -Uri $url -UseBasicParsing
-    $vPattern = "\|\s?\[(1.6.\d+)\s?\("
+    $vPattern = "(1.6.\d+)\s?\("
     if (-not ($html -match $vPattern)) {
         Write-Output "No version found."
         return
     }
     $version = $matches[1]
-    $bPattern = "\|\s?\[1.6.\d+\s?\((1.6.\d+)\)"
+    $bPattern = "1.6.\d+\s?\((1.6.\d+)\)"
     $html -match $bPattern
     $build = $matches[1]
     $pre = ("https://aka.ms/windowsappsdk/1.6/"+$build+"/windowsappruntimeinstall-")
