@@ -3,13 +3,13 @@ Import-Module Chocolatey-AU
 function global:au_GetLatest {
     $url = "https://www.voidtools.com/"
     $html = Invoke-RestMethod -Uri ($url+"forum/viewtopic.php?t=9787") -UseBasicParsing
-    $vPattern = "Everything-([0-9\.]+)a\.x64-Setup\.exe"
+    $vPattern = "Everything-([0-9\.]+)b\.x64-Setup\.exe"
     if (-not ($html -match $vPattern)) {
         Write-Output "No version found."
         return
     }
     $version = $matches[1]
-    $pre = ($url+"Everything-"+$version+"a.x")
+    $pre = ($url+"Everything-"+$version+"b.x")
     $exe = "-Setup.exe"
 
     #returns into $Lastest

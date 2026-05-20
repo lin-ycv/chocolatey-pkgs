@@ -2,7 +2,7 @@
 $toolsDir = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
-  packageName    = 'Everything Alpha'
+  packageName    = 'Everything Beta'
   fileType       = 'exe'
   url = 'https://www.voidtools.com/Everything-1.5.0.1409a.x86-Setup.exe'
   checksum = 'bcbcfa93637635031befeb17d85c02bcd6132aaef311e3867848b24598188a3b'

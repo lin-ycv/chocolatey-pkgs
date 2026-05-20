@@ -1,9 +1,9 @@
-# <img src="https://cdn.jsdelivr.net/gh/lin-ycv/chocolatey-pkgs@main/manifests/everything-development/img/Everything.png" width="48" height="48"/> [Everything Alpha](https://chocolatey.org/packages/everything-development)
+# <img src="https://cdn.jsdelivr.net/gh/lin-ycv/chocolatey-pkgs@main/manifests/everything-development/img/Everything.png" width="48" height="48"/> [Everything Beta](https://chocolatey.org/packages/everything-development)
 
-"Everything Alpha" is the alpha release of an administrative tool that locates files and folders by filename instantly for Windows.
+"Everything Beta" is the beta release of an administrative tool that locates files and folders by filename instantly for Windows.
 Unlike Windows search "Everything" initially displays every file and folder on your computer (hence the name "Everything").
 You type in a search filter to limit what files and folders are displayed.  
-Despite being Alpha, this release is generally stable and much more feature rich than the [standard release](https://chocolatey.org/packages/everything)
+Despite being Beta, this release is generally stable and much more feature rich than the [standard release](https://chocolatey.org/packages/everything)
 
 ## Features
 

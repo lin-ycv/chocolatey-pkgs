@@ -7,17 +7,17 @@
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>linycv</owners>
     <!-- == SOFTWARE SPECIFIC SECTION == -->
-    <title>Everything Alpha</title>
+    <title>Everything Beta</title>
     <authors>David Carpenter</authors>
     <licenseUrl>https://www.voidtools.com/License.txt</licenseUrl>
     <projectUrl>https://www.voidtools.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/lin-ycv/chocolatey-pkgs@main/manifests/everything-development/img/Everything.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <tags>everything file-system indexing freeware file search ntfs admin voidtools alpha</tags>
-    <description><![CDATA["Everything Alpha" is the alpha release of an administrative tool that locates files and folders by filename instantly for Windows.
+    <tags>everything file-system indexing freeware file search ntfs admin voidtools beta</tags>
+    <description><![CDATA["Everything Beta" is the beta release of an administrative tool that locates files and folders by filename instantly for Windows.
 Unlike Windows search "Everything" initially displays every file and folder on your computer (hence the name "Everything").
 You type in a search filter to limit what files and folders are displayed.  
-Despite being Alpha, this release is generally stable and much more feature rich than the [standard release](https://chocolatey.org/packages/everything)
+Despite being Beta, this release is generally stable and much more feature rich than the [standard release](https://chocolatey.org/packages/everything)
 
 ## Features
 
