@@ -3,6 +3,7 @@ $ErrorActionPreference = 'Stop'
 Import-Module Chocolatey-AU -ErrorAction Stop
 function global:au_GetLatest {
     $headers = @{ 'User-Agent' = 'everythingcmdpal-updater'; Accept = 'application/vnd.github+json' }
+    if ($env:GITHUB_TOKEN) { $headers['Authorization'] = "Bearer $env:GITHUB_TOKEN" }
     if ($env:ECP_RELEASE_TAG) {
         $tag = [uri]::EscapeDataString($env:ECP_RELEASE_TAG)
         $releases = @(Invoke-RestMethod -Uri "https://api.github.com/repos/lin-ycv/EverythingCommandPalette/releases/tags/$tag" -Headers $headers)
@@ -10,7 +11,7 @@ function global:au_GetLatest {
         # Search past other-product-only releases to find this product's latest.
         $releases = @(Invoke-RestMethod -Uri 'https://api.github.com/repos/lin-ycv/EverythingCommandPalette/releases?per_page=100' -Headers $headers)
     }
-    $pattern = '^VictorLin\.EverythingCP_(?<version>\d+\.\d+\.\d+\.\d+)_(?<arch>x64|arm64)__[^/]+\.msix$'
+    $pattern = '(?i)^VictorLin\.EverythingCP_(?<version>\d+\.\d+\.\d+\.\d+)_(?<arch>x64|arm64)__[^/]+\.msix$'
     foreach ($release in $releases) {
         if ($release.draft -or $release.prerelease) { continue }
         $assets = @($release.assets | Where-Object { $_.name -match $pattern })
