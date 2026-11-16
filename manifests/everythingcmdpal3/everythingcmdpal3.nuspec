@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>everythingcmdpal3</id>
+    <version>1.12.26082.0</version>
+    <owners>linycv</owners>
+    <title>Everything3 Command Palette (SDK3)</title>
+    <authors>Lin Yu-Chieh (Victor)</authors>
+    <projectUrl>https://github.com/lin-ycv/EverythingCommandPalette</projectUrl>
+    <licenseUrl>https://github.com/lin-ycv/EverythingCommandPalette/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <tags>everything3 everythingcmdpal3 everythingcp3 everything sdk3 powertoys commandpalette search ecp3</tags>
+    <summary>Everything 1.5 SDK3 integration for Command Palette</summary>
+    <description>Everything 1.5 SDK3 integration for Microsoft PowerToys Command Palette, separate from ECP / SDK2.</description>
+    <bugTrackerUrl>https://github.com/lin-ycv/EverythingCommandPalette/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/lin-ycv/chocolatey-pkgs/tree/main/manifests/everythingcmdpal3</packageSourceUrl>
+    <projectSourceUrl>https://github.com/lin-ycv/EverythingCommandPalette/tree/everything3</projectSourceUrl>
+    <releaseNotes>https://github.com/lin-ycv/EverythingCommandPalette/releases/tag/v0.12.26081.0</releaseNotes>
+    <dependencies><dependency id="windows-app-runtime17" /></dependencies>
+  </metadata>
+  <files><file src="tools\**" target="tools" /></files>
+</package>

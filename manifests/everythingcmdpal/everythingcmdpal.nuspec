@@ -14,7 +14,7 @@
     <summary>Everything integration for Command Palette</summary>
     <description>Everything integration for Command Palette</description>
     <bugTrackerUrl>https://github.com/lin-ycv/EverythingCommandPalette/issues</bugTrackerUrl>
-    <packageSourceUrl>https://github.com/lin-ycv/chocolatey-pkgs/tree/everythingcmdpal</packageSourceUrl>
+    <packageSourceUrl>https://github.com/lin-ycv/chocolatey-pkgs/tree/main/manifests/everythingcmdpal</packageSourceUrl>
     <projectSourceUrl>https://github.com/lin-ycv/EverythingCommandPalette</projectSourceUrl>
     <releaseNotes>https://github.com/lin-ycv/EverythingCommandPalette/releases/tag/v0.1.0</releaseNotes>
     <dependencies>
