@@ -9,7 +9,7 @@ function global:au_GetLatest {
         $releases = @(Invoke-RestMethod -Uri "https://api.github.com/repos/lin-ycv/EverythingCommandPalette/releases/tags/$tag" -Headers $headers)
     } else {
         # Search past other-product-only releases to find this product's latest.
-        $releases = @(Invoke-RestMethod -Uri 'https://api.github.com/repos/lin-ycv/EverythingCommandPalette/releases?per_page=100' -Headers $headers)
+        $releases = Invoke-RestMethod -Uri 'https://api.github.com/repos/lin-ycv/EverythingCommandPalette/releases?per_page=100' -Headers $headers
     }
     $pattern = '(?i)^VictorLin\.EverythingCP3_(?<version>\d+\.\d+\.\d+\.\d+)_(?<arch>x64|arm64)__[^/]+\.msix$'
     foreach ($release in $releases) {
