@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>everythingcmdpal3</id>
-    <version>1.12.26082.0</version>
+    <version>0.1.0.0</version>
     <owners>linycv</owners>
     <title>Everything3 Command Palette (SDK3)</title>
     <authors>Lin Yu-Chieh (Victor)</authors>
