@@ -6,8 +6,9 @@
     <owners>linycv</owners>
     <title>Everything Command Palette</title>
     <authors>Lin Yu-Chieh (Victor)</authors>
+    <copyright>Copyright (c) Lin Yu-Chieh (Victor)</copyright>
     <projectUrl>https://github.com/lin-ycv/EverythingCommandPalette</projectUrl>
-    <iconUrl>https://cdn.githubraw.com/lin-ycv/EverythingCommandPalette/refs/heads/main/EverythingCmdPal/Assets/Square150x150Logo.scale-200.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/lin-ycv/EverythingCommandPalette@main/EverythingCmdPal/Assets/Square150x150Logo.scale-200_theme-light.png</iconUrl>
     <licenseUrl>https://github.com/lin-ycv/EverythingCommandPalette/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <tags>everythingcommandpalette everythingcmdpal everythingcp everything powertoys search ecp everything-extension extension cmdpal command-palette commandpalette</tags>
