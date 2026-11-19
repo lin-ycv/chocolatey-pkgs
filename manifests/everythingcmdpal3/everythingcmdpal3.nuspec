@@ -16,7 +16,7 @@
     <packageSourceUrl>https://github.com/lin-ycv/chocolatey-pkgs/tree/main/manifests/everythingcmdpal3</packageSourceUrl>
     <projectSourceUrl>https://github.com/lin-ycv/EverythingCommandPalette/tree/everything3</projectSourceUrl>
     <releaseNotes>https://github.com/lin-ycv/EverythingCommandPalette/releases/tag/v0.12.26081.0</releaseNotes>
-    <dependencies><dependency id="windows-app-runtime17" /></dependencies>
+    <dependencies><dependency id="dotnet-10.0-runtime" /></dependencies>
   </metadata>
   <files><file src="tools\**" target="tools" /></files>
 </package>
